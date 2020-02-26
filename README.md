@@ -8,9 +8,11 @@
 <p>As a customer I should be able to order a specific type of pizza by filling a form.<br>
 As an employee I should be able to check all orders details.</p>
 
-
+<h3>IMPORTANT NOTE:</h3>
+when you enter to employee page use : 123456 as a password
 <h3>File Structure:</h3>
-<p>- public
+<p>
+   - public
    - css
         - index.css
         - customer.css
