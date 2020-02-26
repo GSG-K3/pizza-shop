@@ -19,6 +19,9 @@ app.get('/employee',(req,response)=> {
     })
 })
 
+app.get('/customer', (req,res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'customer.html'))
+})
 
 
 app.listen(app.get('port'), () => {
