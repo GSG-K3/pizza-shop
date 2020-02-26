@@ -14,7 +14,7 @@ let apiCall = (method, url, callback) =>{
 const container = document.getElementById('container')
 
 const getDatabase = () => {
-    apiCall('GET' ,'/employee',(res)=>{
+    apiCall('GET' ,'/getemployee',(res)=>{
         res.forEach( element=> {
            const customer_name = document.createElement('h1');
            customer_name.innerHTML = element.customer_name ;
@@ -27,3 +27,7 @@ const getDatabase = () => {
         
     })
 }
+
+window.addEventListener('load',()=>{
+    getDatabase();
+})
