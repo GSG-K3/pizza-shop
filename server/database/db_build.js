@@ -15,11 +15,8 @@ const getData = callback => {
 
 const postData = (reqBody) => {
     console.log("inside  post ",reqBody);
-    let {customer_name, phone, customer_address, pizza_type,extra_cheese, mushrooms, pepperoni, sauce, note} = reqBody;
-    extra_cheese = true;
-    mushrooms = false; 
-    pepperoni = true;
-
+    const {customer_name, phone, customer_address, pizza_type,extra_cheese, mushrooms, pepperoni, sauce, note} = reqBody;
+  
     sql = {
     text: 'INSERT INTO pizza_order (customer_name, pizza_type, sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)',
     values:  [customer_name, pizza_type,sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note]
