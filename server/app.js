@@ -14,6 +14,7 @@ app.get('/getemployee',(req,response)=> {
     dbData.getData((err,res) => {
         if(err) {console.log(err,'unsuccessful connection')}
         else {response.send(res)}
+    
     })
 
 })
