@@ -59,7 +59,7 @@ tape("get data method", t => {
     
     dbBuild();
     const rx = getData(res => {
-      t.deepEqual(ex, res.rows, "ex should be equal res");
+      t.deepEqual(ex, res.rows, "ex should be equal result");
       t.end();
     });
  });
