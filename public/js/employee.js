@@ -15,8 +15,9 @@ const container = document.getElementById('container')
 
 const getDatabase = () => {
     apiCall('GET' ,'/getemployee',(res)=>{
-       
+        console.log(res)
 if(res.length === 0) {
+    console.log("There is no any orders to show")
     const emptyDB = document.createElement('h1');
     emptyDB.innerHTML = "There is no any orders to show";
     container.appendChild(emptyDB);

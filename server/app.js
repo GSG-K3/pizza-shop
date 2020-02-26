@@ -12,11 +12,9 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.set('port',process.env.PORT || 3000);
 app.get('/getemployee',(req,response)=> {
     dbData.getData((err,res) => {
-        if(res.length !== 0){
         if(err) {console.log(err,'unsuccessful connection')}
         else {response.send(res)}
-    }
-        else response.send("There is no orders to show")
+    
     })
 
 })
