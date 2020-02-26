@@ -12,11 +12,22 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 app.set('port',process.env.PORT || 3000);
 
-app.get('/employee',(req,response)=> {
+app.get('/getemployee',(req,response)=> {
     dbData.getData((err,res) => {
         if(err) {console.log(err,'unsuccessful connection')}
         else {response.send(res)}
     })
+
+})
+app.post('/postcustomer',(req,res)=> {
+    const formdata= req.body;
+    console.log(formdata);
+})
+
+
+
+app.get('/employee',(req,res)=>{
+    res.sendFile(path.join(__dirname, '..', 'public', 'employee.html'))
 })
 
 app.get('/customer', (req,res) => {
