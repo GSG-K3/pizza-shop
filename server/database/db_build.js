@@ -42,4 +42,5 @@ const createTable = callback => {
 })
 }
 
+
 module.exports = {getData, postData,createTable} ;
