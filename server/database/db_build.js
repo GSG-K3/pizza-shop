@@ -26,22 +26,5 @@ const postData = callback => {
 })
 }
 
-// const createOrder = (request, response) => {
-//     console.log(request.body)
-//     const {customer_name, pizza_type, sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note} = request.body
-    sql = {
-        text: 'state',
-        values: []
-    }
-//     pool.query('INSERT INTO users (customer_name, pizza_type, sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)',
-//      [, pizza_type, sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note], 
-//      (error, results) => {
-//       if (error) {
-//         throw error
-//       }
-//       response.status(201).send(`User added with ID: ${results.insertId}`)
-//     })
-//   }
-
 
 module.exports = {getData, postData} ;
