@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/customer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css ">
+    <title>Order Form</title>
+</head>
+
+<body>
+      
+        <form class="order-form" action="/customer" method="post">
+            <h3 class="order-form__title">Order your PIZZA!</h3>
+
+            <div class="inputWithIcon">
+                <label class="order-form__label" for="name">
+                <input type="text" placeholder="Your name" name="name" required autocomplete="off">Name</label>
+                <i class="fa fa-user fa-lg fa-fw" style="color:white;" ></i>
+            </div>
+
+            <div class="inputWithIcon">
+                <label class="order-form__label" for="phone">
+                <input type="text" placeholder="Your phone" name="phone">Phone</label>
+                <i class="fa fa-mobile fa-lg fa-fw" style="color:white;" ></i>
+            </div>
+
+
+            <div class="inputWithIcon">
+                <label class="order-form__label" for="address">
+                <input type="text" placeholder="Your address" name="address">Address</label>
+                <i class="fa fa-map-marker fa-lg fa-fw" style="color:white;" ></i>
+            </div>
+
+    <fieldset>
+        <legend class="h2"> Pizza Type </legend>
+        <label class="h3"><input type=radio name=type value="chicken"> Chicken </label> 
+        <label class="h3"><input type=radio name=type value="vegetarian" checked> Vegetarian</label>
+        <label class="h3"><input type=radio name=type value="margherita"> Margherita </label>
+      </fieldset>
+          
+
+            <fieldset>
+                <legend class="h2"> Pizza Toppings </legend>
+          
+                <p>
+                  <label class="h3">                  <input id="tomato" type=checkbox name="topping" value="tomato" checked>
+                    Tomato </label>
+                </p>
+          
+                <p>
+                  <label class="h3">                   <input id="cheese" type=checkbox name="topping" value="cheese" checked>
+                    Cheese </label>
+                </p>
+          
+                <p>
+                  <label class="h3">                   <input id="salami" type=checkbox name="topping" value="salami">
+                    Salami </label>
+                </p>
+          
+                <p>
+                  <label class="h3"><input id="mushrooms" type=checkbox name="topping" value="mushrooms">
+                    Mushrooms </label>
+                </p>
+              </fieldset>
+
+
+    <fieldset>
+        <legend class="h2"> Pizza Sauce </legend>
+        <label class="h3"><input type=radio name=sauce value="Tomato"> Tomato </label> 
+        <label class="h3"><input type=radio name=sauce value="sweet chilli" checked> Sweet Chilli </label>
+        <label class="h3"><input type=radio name=sauce value="thai chilli"> Thai Chilli </label>
+      </fieldset>
+
+      <fieldset>
+        <legend class="h2"> Additional Notes </legend>
+
+           <label for="notes"><textarea name="notes"></textarea></label>
+        </fieldset>
+
+            <input type="submit" value="Submit" />
+        </form>
+    <script src="/js/customer.js"> </script>
+</body>
+
+</html>
