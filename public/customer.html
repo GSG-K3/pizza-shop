@@ -16,8 +16,8 @@
             <h3 class="order-form__title">Order your PIZZA!</h3>
 
             <div class="inputWithIcon">
-                <label class="order-form__label" for="name">
-                <input type="text" placeholder="Your name" name="name" required autocomplete="off">Name</label>
+                <label class="order-form__label" for="customer_name">
+                <input type="text" placeholder="Your name" name="customer_name" required autocomplete="off">Name</label>
                 <i class="fa fa-user fa-lg fa-fw" style="color:white;" ></i>
             </div>
 
@@ -29,16 +29,16 @@
 
 
             <div class="inputWithIcon">
-                <label class="order-form__label" for="address">
-                <input type="text" placeholder="Your address" name="address">Address</label>
+                <label class="order-form__label" for="customer_address">
+                <input type="text" placeholder="Your address" name="customer_address">Address</label>
                 <i class="fa fa-map-marker fa-lg fa-fw" style="color:white;" ></i>
             </div>
 
     <fieldset>
         <legend class="h2"> Pizza Type </legend>
-        <label class="h3"><input type=radio name=type value="chicken"> Chicken </label> 
-        <label class="h3"><input type=radio name=type value="vegetarian" checked> Vegetarian</label>
-        <label class="h3"><input type=radio name=type value="margherita"> Margherita </label>
+        <label class="h3"><input type=radio name=pizza_type value="chicken"> Chicken </label> 
+        <label class="h3"><input type=radio name=pizza_type value="vegetarian" checked> Vegetarian</label>
+        <label class="h3"><input type=radio name=pizza_type value="margherita"> Margherita </label>
       </fieldset>
           
 
@@ -46,24 +46,20 @@
                 <legend class="h2"> Pizza Toppings </legend>
           
                 <p>
-                  <label class="h3">                  <input id="tomato" type=checkbox name="topping" value="tomato" checked>
-                    Tomato </label>
+                  <label class="h3"> <input id="cheese" type=checkbox name="extra_cheese" value="extra_cheese" checked>
+                    Extra Cheese </label>
+                </p>
+                <p>
+                  <label class="h3"> <input id="mushroom" type=checkbox name="mushrooms" value="mushrooms" checked>
+                    Mushroom </label>
                 </p>
           
                 <p>
-                  <label class="h3">                   <input id="cheese" type=checkbox name="topping" value="cheese" checked>
-                    Cheese </label>
+                  <label class="h3"> <input id="pepperoni" type=checkbox name="pepperoni" value="pepperoni">
+                    Pepperoni </label>
                 </p>
           
-                <p>
-                  <label class="h3">                   <input id="salami" type=checkbox name="topping" value="salami">
-                    Salami </label>
-                </p>
-          
-                <p>
-                  <label class="h3"><input id="mushrooms" type=checkbox name="topping" value="mushrooms">
-                    Mushrooms </label>
-                </p>
+                
               </fieldset>
 
 
@@ -77,7 +73,7 @@
       <fieldset>
         <legend class="h2"> Additional Notes </legend>
 
-           <label for="notes"><textarea name="notes"></textarea></label>
+           <label for="note"><textarea name="note"></textarea></label>
         </fieldset>
 
             <input type="submit" value="Submit" />
