@@ -30,6 +30,9 @@ app.get('/employee',(req,res)=>{
     res.sendFile(path.join(__dirname, '..', 'public', 'employee.html'))
 })
 
+ app.get('/password',(req,res)=>{
+    res.sendFile(path.join(__dirname, '..', 'public', 'password.html'))
+})
 app.get('/customer', (req,res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'customer.html'))
 })
