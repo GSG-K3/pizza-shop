@@ -15,9 +15,4 @@ CREATE TABLE  pizza_order(
     note VARCHAR(100) 
 );
 
--- INSERT INTO pizza_order (customer_name, pizza_type, sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note) VALUES 
--- ('customer_name', 'pizza_type', 'sauce', true, true, false, 'phone', 'customer_address', 'note'),
--- ('rahaf', 'vegetables', 'tomatoe', true, true, true, '05999999', 'hebron', NULL),
--- ('rahaf', 'vegetables', 'tomatoe', true, true, true, '05999999', 'hebron', NULL); 
- 
 COMMIT;

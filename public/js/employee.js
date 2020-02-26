@@ -16,20 +16,23 @@ const container = document.getElementById('container')
 const getDatabase = () => {
     apiCall('GET' ,'/getemployee',(res)=>{
         res.forEach( element=> {
-
+            const orderContainer = document.createElement('div');
+            orderContainer.classList.add("order-name");
            const customer_name = document.createElement('h2');
+            customer_name.classList.add('customer-name');
+
            customer_name.innerHTML =element.customer_name ;
-           container.appendChild(customer_name);
-           customer_name.style.color = 'blue';
+           customer_name.style.color = 'rgb(79, 73, 73)';
+           orderContainer.appendChild(customer_name);
            
 
            const type = document.createElement('h4');
            type.innerHTML = 'Pizza type: '+ element.pizza_type;
-           container.appendChild(type);
+           orderContainer.appendChild(type);
 
            const sauce = document.createElement('h4');
            sauce.innerHTML ='Souce: ' + element.sauce;
-           container.appendChild(sauce);
+           orderContainer.appendChild(sauce);
 
            const toppings = document.createElement('div')
            toppings.innerHTML = "Toppings: "
@@ -50,21 +53,21 @@ const getDatabase = () => {
             pepperoni.innerHTML = "Pepperoni";
             toppings.appendChild(pepperoni)
            }
-           container.appendChild(toppings);
+           orderContainer.appendChild(toppings);
 
            const phone = document.createElement('h4');
            phone.innerHTML ='Phone: ' + element.phone;
-           container.appendChild(phone);
+           orderContainer.appendChild(phone);
 
            const customer_address = document.createElement('h4');
            customer_address.innerHTML ='Address: '+ element.customer_address;
-           container.appendChild(customer_address);
+           orderContainer.appendChild(customer_address);
 
             const note = document.createElement('h4')
             note.innerHTML ='Note: ' + element.note;
-            container.appendChild(note);
-
-           
+            orderContainer.appendChild(note);
+           orderContainer.classList.add("order-container")
+           container.appendChild(orderContainer);
                        
         });
         
