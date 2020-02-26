@@ -2,14 +2,11 @@
     margin:0;
     padding:0;
   }
+ 
   
   body{
-    background:  url('https://wallpapersmug.com/download/360x640/ddcbbf/food-pizza-baking.jpg');
-  
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
+   
+
     text-align: center;
     border-bottom: 1px solid  rgb(22, 21, 21);
     
@@ -17,9 +14,10 @@
   }
   .title{
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgba(238, 37, 37, 0.2);
     margin: 0 30px 20px ;
     font-size: 40px;
+    font-family: 'Lobster Two';
   }
 
   .container{
@@ -40,10 +38,11 @@
     width: 250px;
     border-radius: 40px;
     padding: 30px 10px 0 ;
-    box-shadow: 10px 10px 10px 10px rgba(134, 2, 2, 0.2);
+    box-shadow: 10px 10px 6px 10px rgba(134, 2, 2, 0.2);
     transition: transform 0.25s ease-out;
-    margin: 10px;
-    background-color:rgba(233, 227, 227, 0.384) ;
+    margin: 30px;
+    background-color:rgb(233, 227, 227, 0.384) ;
+    font-family: 'Lobster Two';
 }
 .card p{
     margin: 5px;
