@@ -14,16 +14,13 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.set('port',process.env.PORT || 3000);
 app.get('/getemployee',(req,response)=> {
         getData((err,res) => {
-        if(err) {console.log(err,'unsuccessful connection')}
-        else {response.send(res)}
-    
+        response.send(res)  
     })
-
 })
+
 app.get('/create', (req,res) => {
     dbData.createTable((err,res) => {
-        if(err) {console.log(err,'unsuccessful connection')}
-        else {response.send(res)}
+        response.send(res)
     })
 })
 app.post('/postcustomer',(req,res)=> {
