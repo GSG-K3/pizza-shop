@@ -1,7 +1,6 @@
 const connection = require('../db_connection')
 
 const postData = (reqBody) => {
-    console.log("inside  post ",reqBody);
     const {customer_name, phone, customer_address, pizza_type,extra_cheese, mushrooms, pepperoni, sauce, note} = reqBody;
   
     sql = {
