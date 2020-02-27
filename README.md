@@ -26,8 +26,8 @@ when you enter to employee page use : 123456 as a password
 
 <h3>File Structure:</h3>
 <p>
- - public
-   - css
+- public
+  - css
        - index.css
        - customer.css
        - employee.css
@@ -40,8 +40,7 @@ when you enter to employee page use : 123456 as a password
    - employee.html
 
 - server
-  - controllers
-   - database
+  - database
        - db_build.js
        - db_build.sql
        - db_connection.js
