@@ -9,14 +9,17 @@
 As an employee I should be able to check all orders details.</p>
 
 <h3>How To Run our project: </h3>
-1- clone repo.
-2- in terminal: npm i
-3- create database in heroku.
-4- create config.env file in the project.
-5- take the database url from heroku and save it in config.env file like this:
-DATABASE_URL = < your database from heroku >
-6- in the terminal : npm start
-7- open localhost:3000 and the project will run.
+<ol>
+<li>clone repo.</li>
+<li>in terminal: npm i</li>
+<li>create database in heroku.</li>
+<li>create config.env file in the project.</li>
+<li>take the database url from heroku and save it in config.env file like this:
+DATABASE_URL = < your database from heroku ></li>
+<li>in the terminal : npm start</li>
+<li>open localhost:3000 and the project will run.</li>
+</ol>
+
 
 <h3>IMPORTANT NOTE:</h3>
 when you enter to employee page use : 123456 as a password
