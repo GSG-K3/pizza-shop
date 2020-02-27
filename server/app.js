@@ -18,7 +18,7 @@ app.get('/getemployee',(req,response)=> {
     })
 })
 
-app.get('/create', (req,res) => {
+app.get('/create', (req,response) => {
     dbData.createTable((err,res) => {
         response.send(res)
     })
