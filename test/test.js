@@ -64,29 +64,5 @@ tape("get data method", t => {
     });
  });
 
-  // tape("post data method", t => {
-  //   const ex1 = [
-  //       {
-  //         id: 1,
-  //         customer_name: 'farah',
-  //         pizza_type: 'pizza margherita',
-  //         sauce: 'salsa',
-  //         cheese: 'true',
-  //         paprica: 'false',
-  //         phone: '0548522554',
-  //         address_customer: 'beit-altefel',
-  //         notes: 'If the pizza is not delisious I will retrive my money'
-  //       }
-  //     ]
-    
-  //     dbBuild();
-  //     postData();
-  //     getData((res)=>{
-  //         console.log(res.rows)
-  //         t.deepEqual(ex1, res.rows, "ex should be equal res");
-  //         t.end();
-  //     })
-  // });
-  
   tape.onFinish(() => process.exit(0));
   

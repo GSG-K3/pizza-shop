@@ -8,6 +8,12 @@ body{
     background: linear-gradient(to bottom, #fddb3a, #e28f8a) no-repeat; 
 
 }
+.back_btn{
+  display: flex;
+  align-self: flex-start;
+  margin: 8px  10px 0 10px;
+  text-decoration: none;
+}
 .order-form{
     background-color:white;
      z-index: 1;
