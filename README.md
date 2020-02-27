@@ -26,11 +26,11 @@ when you enter to employee page use : 123456 as a password
 
 <h3>File Structure:</h3>
 <p>
-   - public
+ - public
    - css
-        - index.css
-        - customer.css
-        - employee.css
+       - index.css
+       - customer.css
+       - employee.css
    - js
        - index.js
        - customer.js
