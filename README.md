@@ -8,8 +8,19 @@
 <p>As a customer I should be able to order a specific type of pizza by filling a form.<br>
 As an employee I should be able to check all orders details.</p>
 
+<h3>How To Run our project: </h3>
+1- clone repo.
+2- in terminal: npm i
+3- create database in heroku.
+4- create config.env file in the project.
+5- take the database url from heroku and save it in config.env file like this:
+DATABASE_URL = < your database from heroku >
+6- in the terminal : npm start
+7- open localhost:3000 and the project will run.
+
 <h3>IMPORTANT NOTE:</h3>
 when you enter to employee page use : 123456 as a password
+
 <h3>File Structure:</h3>
 <p>
    - public
