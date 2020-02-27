@@ -9,9 +9,7 @@ const createTableQuery = fs.readFileSync(path.join(__dirname,'db_build.sql')).to
 const createTable = callback => {
     connection.query(createTableQuery, (err,res) => {
     if (err) throw err; 
-    
 })
 }
-
 
 module.exports = createTable ;
