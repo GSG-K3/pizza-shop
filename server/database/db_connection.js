@@ -2,7 +2,6 @@ const {Pool} = require('pg')
 
 require('env2')("config.env")
 const connectionString = process.env.DATABASE_URL;
-console.log(connectionString)
 if (!connectionString){
     console.log("unsuccessful connection")
 }
