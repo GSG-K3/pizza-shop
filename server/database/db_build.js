@@ -4,7 +4,7 @@ const path = require('path');
 const connection = require('./db_connection');
 
 // get data from database
-const getSql = "select * from pizza_order"
+const getSql = "select * from pizza_order;"
 
 const getData = callback => {
     connection.query(getSql, (err,res) => {
@@ -18,7 +18,7 @@ const postData = (reqBody) => {
     const {customer_name, phone, customer_address, pizza_type,extra_cheese, mushrooms, pepperoni, sauce, note} = reqBody;
   
     sql = {
-    text: 'INSERT INTO pizza_order (customer_name, pizza_type, sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)',
+    text: 'INSERT INTO pizza_order (customer_name, pizza_type, sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9);',
     values:  [customer_name, pizza_type,sauce, extra_cheese,mushrooms, pepperoni, phone, customer_address, note]
     }
 
