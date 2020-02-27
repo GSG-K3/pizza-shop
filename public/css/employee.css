@@ -16,3 +16,10 @@
 .customer-name{
     margin-bottom:10px;
 }
+
+.back_btn{
+    display: flex;
+    align-self: flex-start;
+    margin: 8px  10px;
+    text-decoration: none;
+  }
