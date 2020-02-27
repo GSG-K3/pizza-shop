@@ -32,13 +32,12 @@ when you enter to employee page use : 123456 as a password
        - customer.css
        - employee.css
    - js
-       - index.js
        - customer.js
        - employee.js
    - index.html
    - customer.html
    - employee.html
-
+        
 - server
   - database
        - db_build.js
