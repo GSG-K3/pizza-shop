@@ -14,7 +14,7 @@ As an employee I should be able to check all orders details.</p>
 <li>in terminal: npm i</li>
 <li>create database in heroku.</li>
 <li>create config.env file in the project.</li>
-<li>take the database url from heroku and save it in config.env file like this:
+<li>take the database url from heroku and save it in config.env file like this: <br>
 DATABASE_URL = < your database from heroku ></li>
 <li>in the terminal : npm start</li>
 <li>open localhost:3000 and the project will run.</li>
