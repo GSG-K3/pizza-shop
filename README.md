@@ -25,7 +25,7 @@ DATABASE_URL = < your database from heroku ></li>
 when you enter to employee page use : 123456 as a password
 
 <h3>File Structure:</h3>
-```
+
 - public
    - css
         - index.css
@@ -53,7 +53,7 @@ when you enter to employee page use : 123456 as a password
 
 - test
    - test.js
-```
+
 <h3>DB Schema:</h3>
 <img src="https://user-images.githubusercontent.com/54964739/75233563-b5493580-57c1-11ea-85c4-f128a13c9005.png">
 
