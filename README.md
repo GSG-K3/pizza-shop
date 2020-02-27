@@ -2,7 +2,7 @@
 
 <h2>It is a website that is designed to allow customers from pizaa online ordering</h2>
 
-<a href="https://pizza-shop-gsg.herokuapp.com/">Pizza Shop Website</a>
+<a href="https://pizza-shop2.herokuapp.com/">Pizza Shop Website</a>
 
 <h3>User Journy:</h3>
 <p>As a customer I should be able to order a specific type of pizza by filling a form.<br>
