@@ -20,7 +20,7 @@
   "homepage": "https://github.com/GSG-K3/pizza-shop#readme",
   "dependencies": {
     "env2": "^2.2.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "heroku": "^7.38.2",
     "pg": "^7.18.2",
     "tap-spec": "^5.0.0",
